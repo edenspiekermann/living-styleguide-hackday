@@ -4,15 +4,27 @@ $bp__grid__two-up: 400
 $bp__grid__three-up: 500
 $bp__grid__four-up: 600
 //////////////////////////
-.grid 
+
+
+// The main grid helpers
+
+// .grid--dbl-gutter   - Uses a double gutter
+// .grid--no-gutter    - Uses no gutter
+
+
+// Styleguide 2.1
+
+
+
+.grid
   margin-left: -(em($grid__gutter/2))
   margin-right: -(em($grid__gutter/2))
 
-.grid--dbl-gutter 
+.grid--dbl-gutter
   margin-left: -(em($grid__gutter))
   margin-right: -(em($grid__gutter))
 
-.grid--no-gutter 
+.grid--no-gutter
   margin-left: 0
   margin-right: 0
 
@@ -31,7 +43,7 @@ $bp__grid__four-up: 600
     padding-right: 0
   .grid--switch &
     float: right
-    
+
   .grid--four-up &
     +respond-min($bp__grid__four-up)
       width: (100%/4)
@@ -41,3 +53,8 @@ $bp__grid__four-up: 600
   .grid--two-up &
     +respond-min($bp__grid__two-up)
       width: (100%/2)
+
+// Deprecated: This is really stupid
+// No styleguide reference.
+.stupid-grid
+  display: none

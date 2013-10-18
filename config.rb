@@ -18,6 +18,10 @@ compass_config do |config|
    config.line_comments = true
 end
 
+set :markdown_engine, :redcarpet
+activate :kss, :kss_dir => 'assets/css'
+
+
 ###
 # Multi Sass Imports
 ###
