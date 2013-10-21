@@ -30,7 +30,7 @@ require 'sass-globbing'
 # Per-page layout changes:
 #
 # With no layout
-# page "/path/to/file.html", :layout => false
+page "/styleguide/*", :layout => :styleguide
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout

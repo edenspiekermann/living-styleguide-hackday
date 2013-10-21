@@ -1,0 +1,7 @@
+#tdcss
+  - files = Dir["source/partials/modules/**/*.haml"]
+  - files.each do |file|
+    - path = file.gsub('/_', '/')
+    - path = path.gsub('source/', '')
+    - path = path.gsub('.haml', '')
+    = partial 'partials/partial-styleguide', :locals => { :partial => path, :partial_name => file }

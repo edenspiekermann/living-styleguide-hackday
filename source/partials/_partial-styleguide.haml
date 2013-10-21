@@ -1,0 +1,6 @@
+- partial ||= false
+- partial_name ||= false
+
+
+%h1 Partial Name: #{partial_name}
+= partial partial, :locals => { :styleguide => true }
